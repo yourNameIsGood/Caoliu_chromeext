@@ -2,32 +2,38 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
+    <script src="static/jquery.min.js"></script>
+    <script src="static/base64.js"></script>
+    <script src="static/popup.js"></script>
+    <script type="javascript/text" >
+    </script>
     <style>
-      body {
-        min-width: 357px;
-        overflow-x: hidden;
-      }
-
-      img {
-        margin: 5px;
-        border: 2px solid black;
-        vertical-align: middle;
-        width: 75px;
-        height: 75px;
-      }
+      body {min-width: 757px; min-height: 500px; overflow-x: hidden; }
+      img  {margin: 5px; border: 2px solid black; vertical-align: middle; width: 75px; height: 75px; }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
-    <script src="static/popup.js"></script>
   </head>
   <body>
-  <h1> hello </h1>
-  <h2> world </h2>
+  <input type="text" class="input-url" style="width:500px" />
+  <input type="button" class="decode-btn" value="decode" />
+
+  <h2>this URL:&nbsp;&nbsp;<span class="this-result"></span></h2>
+  <h2>ID:&nbsp;&nbsp;<span class="result"></span></h2>
+
+  <div class="video-list">
+    <p>
+      <!-- <span class="list-name">边看边买:</span><span class="num-id">177428936</span><span class='encode-id'> XNzA5NzE1NzQ0</span>
+      <br>
+      <a href="http://linzhen.youku.com/v/timelineH5forAppCard?videoId=XNzA5NzE1NzQ0">CARD</a>
+      <a href="http://linzhen.youku.com/v/timelineH5forAppV2?videoId=XNzA5NzE1NzQ0&h5_type=2" target="_blank">V2</a>
+      <br>
+      <span class="list-name">图文注释:</span><span class="num-id">227047537</span><span class='encode-id'>  XOTA4MTkwMTQ4</span>
+      <br>
+      <span class="list-name">打赏:</span><span class="num-id">207232552</span><span class='encode-id'> XODI4OTMwMjA4</span>
+      <br>
+      <span class="list-name">投票:</span><span class="num-id">207242262</span><span class='encode-id'> XODI4OTY5MDQ4  </span> -->
+      </p>
   </body>
 </html>
+
 
