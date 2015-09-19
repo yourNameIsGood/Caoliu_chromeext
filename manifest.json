@@ -4,7 +4,9 @@
   "name": "caoliu helper",
   "description": "Gettin' articles with over 500 replies",
   "version": "1.0",
-
+  "icons": {
+        "128": "static/cao.jpg" //chrome://extensions 中显示的图片
+    },
   "browser_action": {
     "default_icon": "static/cao.jpg",
     "default_popup": "popup.html"
