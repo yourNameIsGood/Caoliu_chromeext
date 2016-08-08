@@ -5,6 +5,8 @@
   "description": "Visit CaoLiu in a better way",
   "version": "0.11",
   "icons": {
+        "16": "static/cao.jpg",
+        "48": "static/cao.jpg",
         "128": "static/cao.jpg" //chrome://extensions 中显示的图片
     },
   "browser_action": {
