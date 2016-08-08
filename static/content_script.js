@@ -3,8 +3,7 @@
     无需background.js
 ***/
 
-function ask_can_spacing() {
-    console.log('ask_can_spacing()');
+function rend() {
     var nums = document.getElementsByClassName("tal f10 y-style");
     for(i in nums){var count = nums[i].innerHTML;
         if(count>500){
@@ -15,15 +14,15 @@ function ask_can_spacing() {
     
     //如果觉得性能不好，可以指定域名生效
     //v2ex reply_content 中找email
-    var nums = document.getElementsByClassName("reply_content");
-    var reg = /[a-zA-Z0-9]+@[0-9a-zA-Z]+\.[a-zA-Z0-9]{2,4}/;
-    for(i in nums){
-        var reply = nums[i].innerHTML;
-        if(reg.test(reply)){
-            var tr = (nums[i].parentNode);
-            tr.style.backgroundColor="#ff0" ;
-        }
-    }
+    //var nums = document.getElementsByClassName("reply_content");
+    //var reg = /[a-zA-Z0-9]+@[0-9a-zA-Z]+\.[a-zA-Z0-9]{2,4}/;
+    //for(i in nums){
+    //    var reply = nums[i].innerHTML;
+    //    if(reg.test(reply)){
+    //        var tr = (nums[i].parentNode);
+    //        tr.style.backgroundColor="#ff0" ;
+    //    }
+    //}
 
     // chrome.runtime.sendMessage({purpose: 'can_spacing'},
     //     function(response) {
@@ -41,4 +40,4 @@ function ask_can_spacing() {
     // );
 }
 
-ask_can_spacing();
+rend();
