@@ -3,6 +3,7 @@
     无需background.js
 ***/
 
+
 function rend() {
     var nums = document.getElementsByClassName("tal f10 y-style");
     for(i in nums){var count = nums[i].innerHTML;
