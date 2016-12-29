@@ -4,6 +4,8 @@
 ***/
 
 function rend() {
+    var url = window.location.href ;
+
     var nums = document.getElementsByClassName("tal f10 y-style");
     for(i in nums){var count = nums[i].innerHTML;
         if(count>500){
@@ -13,26 +15,35 @@ function rend() {
     }
 
 	//clpig ad removing
-	console.log('out start');
-	    var elements = document.getElementsByTagName("iframe");
-	    while(elements.length > 0){
-		elements[0].parentNode.removeChild(elements[0]);
-	    }
-	    var ele = document.getElementById("alm_r_b_15672");
-	    ele.parentNode.removeChild(ele);
-	console.log("out done");
-
-	// incase it does not work, do it 5 seconds later again
+    target = "clpig";
+    if(url.indexOf(target)>-1){
+        console.log('out start');
+        var elements = document.getElementsByTagName("iframe");
+        while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+        }
+        var ele = document.getElementById("alm_r_b_15672");
+        ele.parentNode.removeChild(ele);
+        console.log("out done");
+        // In case it does not work, do it 5 seconds later again
         setTimeout(function(){
-		console.log("start");
-	    var elements = document.getElementsByTagName("iframe");
-	    while(elements.length > 0){
-		elements[0].parentNode.removeChild(elements[0]);
-	    }
-	    var ele = document.getElementById("alm_r_b_15672");
-	    ele.parentNode.removeChild(ele);
-		console.log("done");
-	},5555);
+            console.log("later start");
+            var elements = document.getElementsByTagName("iframe");
+            while(elements.length > 0){
+            elements[0].parentNode.removeChild(elements[0]);
+            }
+            var ele = document.getElementById("alm_r_b_15672");
+            ele.parentNode.removeChild(ele);
+            console.log("later done");
+        },5555);
+    }
+
+    // cn163.net  remove the cover hidden ad
+    target = "cn163.net";
+    if(url.indexOf(target)>-1){
+        var a = document.getElementsByTagName("a");
+        a[0].parentNode.removeChild(a[0]);
+    }
 
 
     
